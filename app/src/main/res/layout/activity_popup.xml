@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:background="@drawable/popupbg"
+    tools:context=".GalleryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/popUpDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_weight="0"
+            android:text="Testing"
+            android:textStyle="bold"
+            android:textColor="@color/darkbg"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/popUpImage"
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#FF0000"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/popUpMood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#FF0000"
+            android:gravity="center_horizontal"
+            android:text="TextView"
+            android:textColor="@color/darkbg" />
+
+        <TextView
+            android:id="@+id/popUpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="18dp"
+            android:text="Testing"
+            android:textColor="@color/darkbg"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/popUpSens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="18dp"
+            android:text="Testing"
+            android:textStyle="italic"
+            android:textColor="@color/darkbg"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

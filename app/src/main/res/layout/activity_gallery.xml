@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".TextActivity"
+    android:label="Gallery">
+
+    <Button
+        android:id="@+id/button_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginRight="28dp"
+        android:padding="12dp"
+        android:insetLeft="6dp"
+        android:insetRight="6dp"
+        android:text="+ New Entry"
+        android:textColor="@color/white"
+        android:background = "@drawable/roundedbutton" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recGallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="?colorAccent"
+        app:layoutManager="LinearLayoutManager"
+        app:reverseLayout="true"
+        app:stackFromEnd="true">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
